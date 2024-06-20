@@ -1,0 +1,9 @@
+/include/ "pl.dtsi"
+/ {
+};
+
+&xxv_ethernet {
+   	local-mac-address = [00 0a 35 00 01 25];
+};
+
+

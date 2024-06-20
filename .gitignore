@@ -1,0 +1,8 @@
+**/build
+**/.Xil
+**/*.jou
+**/*.log
+**/vivado*
+archive/
+**/archive
+**/*.xsa
