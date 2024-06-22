@@ -41,15 +41,14 @@ proc create_target {} {
 
         # Build the project
         puts "--- Building project"
-        # ::proj::build_proj
+        ::proj::build_proj
         
-        # wait_on_run impl_1
+        wait_on_run impl_1
 
-        # puts "--- Export bitstream"
-        # set xil_proj [::proj::get_project_name]
-        # ::proj::export_proj_bitstream -destination "$origin_dir/build/export_${xil_proj}"
+        puts "--- Export bitstream"
+        set xil_proj [::proj::get_project_name]
+        ::proj::export_proj_bitstream -destination "$origin_dir/build/export_${xil_proj}"
         
     }
 
-create_target 
-
+create_target

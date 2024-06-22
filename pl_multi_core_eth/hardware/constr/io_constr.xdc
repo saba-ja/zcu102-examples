@@ -1,5 +1,5 @@
 ## enable tx by forcing 0 from design. sfp0,1,2,3 => a12, a13, b13, c13
-set_property -dict {PACKAGE_PIN B12 IOSTANDARD LVCMOS33} [get_ports {sfp0_tx_en[0]}]
+set_property -dict {PACKAGE_PIN A12 IOSTANDARD LVCMOS33} [get_ports {sfp0_tx_en[0]}]
 set_property -dict {PACKAGE_PIN A13 IOSTANDARD LVCMOS33} [get_ports {sfp1_tx_en[0]}]
 set_property -dict {PACKAGE_PIN B13 IOSTANDARD LVCMOS33} [get_ports {sfp2_tx_en[0]}]
 set_property -dict {PACKAGE_PIN C13 IOSTANDARD LVCMOS33} [get_ports {sfp3_tx_en[0]}]
@@ -12,8 +12,8 @@ set_property -dict {PACKAGE_PIN C13 IOSTANDARD LVCMOS33} [get_ports {sfp3_tx_en[
 #set_property PACKAGE_PIN B5 [get_ports gt_tx_gt_port_0_n]
 
 #USER_MGT_SI570_CLOCK2_C_P
-set_property PACKAGE_PIN C8 [get_ports gt_ref_clk_p]
-#create_clock -period 6.400 -name gt_ref_clk [get_ports gt_ref_clk_clk_p]
+set_property PACKAGE_PIN C8 [get_ports ref_clk_156mhz_clk_p]
+#create_clock -period 6.400 -name gt_ref_clk [get_ports ref_clk_156mhz_clk_p]
 
 #LED 2 and 3
 # led 0 .. 7 => ag14, af13, ae13, aj14, aj15, ah13, ah14, al12
